@@ -1,0 +1,100 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+font-family: 'Ubuntu', sans-serif;
+font-size: 100%;
+background-color: black;
+}
+
+ul {
+list-style: none;
+}
+
+a {
+text-decoration: none;
+}
+
+img {
+width: 100%;
+vertical-align: top;
+}
+
+body {
+  margin: 75px auto;
+}
+
+header {
+  width: 100%;
+  height: 50px;
+  background-color: #2e3a46;
+}
+
+.header-container {
+  width: 90%;
+  margin: 0 auto;
+}
+
+.logo-container {
+  display: flex;
+  align-items: center;
+  height: 50px;
+  width: 40px;
+}
+
+main {
+  width: 100%;
+  height: calc(100vh - 200px);
+  background-color: #1e2d3b;
+  display: flex;
+  align-items: center;
+}
+
+.cards-container {
+  width: 70%;
+  margin: auto;
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+}
+
+.card-container {
+  width: calc(100% / 6 - 15px);
+  background-color: #2e3a46;
+  padding: 1.5%;
+  margin: 5px 0;
+  margin-left: 15px;
+}
+
+.card-container:hover {
+  transform: scale(1.1, 1.1) translateY(-5px);
+  opacity: 0.9;
+  transition-duration: 1s;
+}
+
+.img-container {
+  width: 100%;
+}
+
+h2 {
+  color: white;
+  font-size: 0.7rem;
+  text-transform: uppercase;
+  text-align: center;
+  margin: 15% 0 15%;
+}
+
+h4 {
+  margin: 0;
+  font-size: 0.5rem;
+  font-weight: 300;
+  text-align: center;
+  color: #727873;
+}
+
+.active {
+  border: 2px solid white;
+}
