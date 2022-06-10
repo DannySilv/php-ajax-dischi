@@ -26,6 +26,18 @@
   </header>
 
   <main id="app">
+    <div class="row">
+      <select
+        @change="newAPI()"
+        v-model="genre"
+      >
+        <option value="" selected>Tutti i generi</option>
+        <option value="Rock">Rock</option>
+        <option value="Jazz">Jazz</option>
+        <option value="Pop">Pop</option>
+        <option value="Metal">Metal</option>
+      </select>
+    </div>
     <div class="cards-container">
       <div 
         v-for="card in database" 
